@@ -1,11 +1,24 @@
+import React, { Component } from 'react'
 import './App.css';
+import HomePage from './components/HomePage'
 
-function App() {
-  return (
-    <div className="App">
 
-    </div>
-  );
+
+
+class App extends Component {
+  constructor(props){
+    super(props)
+  }
+
+  render(){
+    return(
+      <div>
+
+      <HomePage />
+
+      </div>
+
+    )
+  }
 }
-
-export default App;
+export default App
