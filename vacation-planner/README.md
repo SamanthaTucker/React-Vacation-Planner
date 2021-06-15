@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Vacation Planner - React Version
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Problem:** 
+- Users don't have a vacation planner app/ physical planner to organize their vacations.
+- The users can use this app to plan out vacations/small trips to help organize their budget, location, hotels, dates, and travel notes.
+- Overall this app can provide an organised list for users to input and edit to get excited for their vacations!
 
-## Available Scripts
+**User Stories:**
+As a user, I should be able to...
+- Organize my vacation and have it presented on my home page all on one list/area.
+- Login / Create Aaccount
+- Have my account personalized
+- Add / Remove / Edit any items I input at any time.
+- Delete my account If I want to
+- See clearly where to input my items to create a planner for each vacation I want.
+- Save my progress to my home page at any time.
+- Have an option to add my vacation experience as more Travel Notes, almost like a blog.
 
-In the project directory, you can run:
+**Who Would Use This?** 
+- Vacation planners
+- Organised people who like to have planners
+- People who enjoy planning vacations
+- Frequent Travelers
+- Big family vacationers
+- Bloggers
 
-### `npm start`
+## Routes:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Route Name | URL | HTTP Verb | Description
+---------- | --- | --------- | -----------
+Index | /planner | GET | Main home page user will see after logging in/ creating an account
+New | /planner/new | GET | New: will be adding locations, budget, travel notes, and day schedules.
+Create | /planner | POST | User can create a new vacation with basic Location, Budget, Number of days, to show up on index route.
+Show | /planner/:id | GET | View each created vacation
+Edit | /planner/:id/edit | GET | Ability to edit user input/vacations
+Update | /planner/:id | PUT | Create the vacations and push them to the Schema, and show them on the index route
+Destroy | /planner/:id | DELETE | Ability to delete user vacations
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Wireframe 
 
-### `npm test`
+**Main Page/ Login or Create Account:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Image of Main Page](https://i.imgur.com/EhMAAHB.png)
 
-### `npm run build`
+**Create Account Page:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Image of Create Account Page](https://i.imgur.com/6p3LZpi.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Home Page After Login/ Create Account:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Image of Home Page After Login](https://i.imgur.com/ThAN6pr.png)
 
-### `npm run eject`
+## Stretch Goals/ Upcoming Features: ##
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Users will be able to create username and passwords. Users will have their created vacations saved to their profiles, and will be able to view them once logging in.
+- Ability to add User personal travel notes and tips
+- Updated nav links/ Hamburger menu 
+- Updated nav link Travel-notes: Users will be able to input notes and tips to their created vacations/ input their experience in a blog like post in their account
+- User will have a countdown display to show how many days are left until their dates of vacation
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
