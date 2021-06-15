@@ -1,1 +1,47 @@
+body{
+    background-color: #F2E2DF;
+}
+/* Navbar Css */
+.navbar-div{
+    background-color: rgb(112, 112, 112);
+    padding: 15px;
+}
+.nav-link{
+    color: white;
+    font-size: 20px;
+}
+.nav-link:hover{
+    font-size: 23px;
+    color: rgb(202, 202, 202);
+}
+.navbtn-div{
+    margin-left: auto;
+    padding-right: 30px;
+}
+.nav-btn{
+    font-size: 18px;
+}
+.nav-btn:hover{
+    font-size: 20px;
+}
+/* Navbar Css End*/
 
+/* HeaderImage Css */
+.header-img-div{
+    width: 100%;
+    height: auto;
+}
+.h2-div{
+    position: absolute;
+    padding-left: 25px;
+    margin: 30px;
+}
+.h2-title{
+    font-family: 'Courgette', cursive;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 35px;
+    word-spacing: 8px;
+    width: 370px;
+}
+/* HeaderImage Css End*/

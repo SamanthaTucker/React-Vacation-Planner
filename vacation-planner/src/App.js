@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import './App.css';
-import HomePage from './components/HomePage'
+//Components
+import NavBar from './components/NavBar'
+import HeaderImage from './components/HeaderImage'
 
 
 
@@ -14,7 +16,9 @@ class App extends Component {
     return(
       <div>
 
-      <HomePage />
+      <HeaderImage />
+      
+      <NavBar />
 
       </div>
 
